@@ -1,0 +1,361 @@
+body {
+padding: 0;
+margin: 0;
+}
+/* Header Desktop */
+.header--main__hamburger img{
+    display: none;
+}
+
+.header--main{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    height: 100px;
+    font-size: 42px;
+    margin:10px 10px 20px 0;
+}
+.header--main__title {
+
+    font-size: 100%;
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #b71717;
+    font-weight: 700;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: -2px;
+    margin-left: 50px;
+    margin-top: 10px;   
+}
+.header--main__title--light {
+    font-weight: 100;
+}
+.header--main__ad {
+    font-family: 'Droid Serif', Times New Roman, serif;
+    font-size: 70%;
+    font-style: italic;
+    color: #523468e;
+    font-weight: 200;
+    text-transform: lowercase;
+    letter-spacing: -2.2px;
+}
+
+
+.header--main__search input[type=search]{
+    padding: 6px;
+    border-color: #a29b9b;
+    border-radius: 5px;
+    border-style: solid;
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-left: 100px;
+    font-size: 17px;
+    color: orange;
+    
+}
+.header--main__shop {
+    display: block;
+    font-family: 'Droid Serif', Times New Roman, serif;
+    font-size: 70%;
+    font-style: italic;
+    color: #b71717;
+    margin-top:10px;
+    margin-left:90px;       
+}
+.header--main__bag {
+    margin-top:20px;
+    margin-left:100px;
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+}.header--main__bag2 {
+    margin-top:30px;
+    margin-left:10px;
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    font-size:60%;
+    color: darkgrey;
+}
+/* Header e nav responsivos */
+@media only screen and (max-width: 600px){
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .header--main {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+    }
+    .header--main__hamburger img{
+        display: inline-block;
+        width: 70px;
+        height: 100px;
+        margin-left: 20px;
+    }
+    .header--main__title img{
+        width: 370px;
+        height: 100px;
+    }
+    .header--main__shop{
+        display: none;
+
+    }
+    .header--main__bag {
+        width: 200px;
+        height: 100px;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-top: 10px;
+
+    } 
+    .header--main__bag img {
+        width: 70px;
+        height: 65px;
+    }
+    
+    .header--main__bag2 {
+        width: 200px;
+        height: 200px;
+        font-size: 50%;
+        margin-top: 80px;
+        margin-left: -65px;
+        
+    }
+    
+    .header--main__search {
+        display: none;
+    }
+    .navtop{
+        display: none;
+    }
+    
+/*Media query para a main, mostrando em duas colunas as potions */
+    h2 {
+        text-align: center;
+    }
+    .section--main {
+    width: 600px;
+    padding: 0;
+    }
+    .potion--ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    width: 100%;
+    text-decoration: none;
+
+}
+    .potion__li     {
+    display: inline-block;
+    width: 30%;
+    height: 30%;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    
+
+}
+    .potion__li a img {
+    max-width: 50%;
+    margin: 10px 10px -20px 10px;
+}
+
+    
+    
+}
+
+
+
+
+
+/* Nav Desktop, abaixo do header */
+.navtop{
+    margin: 0;
+    padding: 0;
+}
+
+.navtop--ul {
+   list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #523468;
+    height: 50px;
+    align-content: center;
+}
+
+.navtop--li {
+    margin-left: 30px;
+    float: left;
+}
+.navtop--li a {
+    display: block;
+    height: 15px;
+    font-family: 'Droid Serif', Times New Roman, serif;
+    font-weight: 200;
+    color: #e2e2e2;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+    margin:0;
+}
+#navtop--li__clearence {
+    padding: 0;
+    margin-right: 300px;
+    background-color: #321c41;
+    border-radius: 5px;
+    
+}
+#navtop--li__or {
+    margin-left: -20px;
+    padding: 0;
+    color: #5d5d5d;
+    font-family: 'Droid Serif', Times New Roman, serif;
+}
+#navtop--li__singup {
+    margin-left: -20px;
+}
+/* Main Potions */
+
+}
+.section--main {
+    width: 100%;
+    padding: 0;
+    
+    
+}
+h2 {
+    margin: 40px;
+    font-size: 30px;
+}
+.potion--ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    width: 100%;
+    text-decoration: none;
+
+}
+.potion__li     {
+    display: block;
+    width: 350px;
+    height: 400px;
+    float: left;
+    align-content: center;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px;
+    
+
+}
+.potion__li a img {
+    max-width: 90%;
+    margin: 10px 10px -20px 10px;
+}
+
+
+/* Footer */
+.footer--main {
+    width: 100%;
+    display: inline-block;
+    background-color: #eae8e8;
+    height: 280px;
+}
+.footer--main__contents{
+    width: 50%;
+    display: inline-block;
+    height:180px;
+}
+.footer--main__ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height 120px;
+       
+}
+.footer--main__li {
+    float:left;
+    text-decoration: none;
+    list-style-type: none;
+}
+.footer--main__li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    height: 100px;
+    margin-left: 20px;
+    color:#b71717;
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+}
+.footer--social{
+    width: 60%;
+    height: 50px;
+    margin-left: 0px;
+    padding: 0;
+}
+.footer--social__ul{
+    display: inline-block;
+    float: left;
+    margin-left: 20px;
+}
+.footer--social__li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px;
+
+}
+.footer-social__li a img{
+    display: block;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    
+    
+}
+.footer--rights {
+    color: #9d9999;
+    margin: 50px 50px 0px 50px;
+}
+.footer--main__submit {
+    display: inline-block;
+    float: right;
+    font-style: italic;
+    background-color:white;
+    border-radius: 5px;
+    height: 180px;
+    margin: 40px 40px 10px 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 200;
+}
+#submit--newsletter{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+#submit--placeholder {
+    height: 25px;
+    border-radius: 5px;
+    border-width: thin;
+    width:220px;
+    border-style: solid;
+    color: black;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 5px;
+    
+}
+#submit--button {
+    height: 38px;
+    width: 100px;
+    border-radius: 5px;
+    background-color:#b71717;
+    color:white;
+    border-style: hidden;
+}
+
