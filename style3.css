@@ -1,0 +1,382 @@
+body {
+padding: 0;
+margin: 0;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    
+}
+li {
+    list-style-type: none;
+}
+
+h1 {
+    margin-left: 100px;
+    font-family: 'Droid Serif', Times New Roman, serif;
+    color:#403448;
+    font-weight: 700;
+    
+}
+h3  {
+    margin: 40px;
+    font-family: 'Droid Serif', Times New Roman, serif;
+    color: #b71717;
+    font-size:25px;
+    font-weight: 200;
+    display: block;
+    flex-direction: row;
+    height: 100px;
+    line-height: 30px;
+}
+h4 {
+    margin: 20px;
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 20px;
+    
+}
+/* Header Desktop */
+
+
+.header--main{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content:space-around;
+    align-items:center;
+    margin-top: 10px;
+    margin-left: -200px;
+    padding: 0;
+}
+.header--main__title {
+}
+.header--main__close {
+    display: none;
+}
+.header--main__burger {
+    display: none;
+}
+
+
+.header--main__search input[type=search]{
+    padding: 5px;
+    border-color: #593a6f;
+    border-radius: 5px;
+    border-style: solid;
+    color: orange;
+    height: 40px;
+    width: 350px;
+}
+.header--main__shop {
+    font-family: 'Droid Serif', Times New Roman, serif;
+    font-size: 25px;
+    font-style: italic;
+    color: #b71717;
+}
+.header--main__bag {
+    margin-top:20px;
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+}
+/*Media query para responsividade do header */
+
+
+@media (max-width:600px){
+    .header--main {
+        margin: 0;
+    }
+.header--main__title {
+    width: 300px;
+    
+    }    
+    
+.header--main__burger img {
+    display: flex;
+    height: 50px;
+    color: purple;
+}
+    .header--main__burger > div {
+    display: flex;
+    height: 50px;
+    color: purple;
+    width: 30px;
+}
+.header--main__close img {
+display: flex;
+height: 50px;        
+    }
+.header--main__close > div {
+    display: none;
+    height: 50px;
+    width: 30px;
+    }    
+.header--main__search {
+        display: none;
+}    
+
+
+.header--main__shop {
+    display: none;
+}
+.header--main__bag {
+    height: 70px;
+    width: 10%;
+    margin: 0;
+}
+}
+ 
+
+/* Nav Desktop, abaixo do header */
+.shop--ad{
+    display: none;
+}
+.navtop{
+    background-color: #593a6f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.navtop--menu{
+    display: flex;
+    flex-wrap:wrap; 
+    list-style-type: none;
+    padding: 5px;
+    
+}
+.navtop--li {
+    margin-left:20px;
+    
+}
+.navtop--li a {
+    display: block;
+    padding: 5px;
+    margin-left: 40px;
+    color:white;
+    
+}
+
+
+/* Media query para deixar menu responsivo */
+@media (max-width:600px){
+    
+.navtop--menu {
+display:none;
+text-align: left;
+width: 100%;    
+
+}
+.navtop--li {
+margin-left: -5px;
+padding: 10px;
+border-color: grey;
+
+}    
+
+.header--main__burger {
+    display: flex;
+}
+.shop--ad{
+display: block;
+text-align: center;
+font-size: 20px;
+font-style: italic;
+color: #645050;
+margin-top: -5px;    
+background-color: #d3d2d2;    
+}
+}
+
+
+
+/* Main Potions usando o css flex */
+.main--potion {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main--potion > div {
+    flex: 1 1 200px;
+    margin: 70px;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+
+
+
+/* Media query para deixar a main com as potions em duas colunas */
+@media (max-width:600px){
+. main--potion {
+    max-width: 600px;
+}
+.main--potion > div {
+    flex: 1 1 200px;
+    margin: 40px;
+}
+    h1 {
+        text-align: center;
+        margin: 20px;
+    }
+
+}
+
+
+
+/* Footer */
+footer {
+    height: 300px;
+    width: 100%;
+    background-color:#e6e4e4;
+        
+}
+.footer--main {
+    width: %30;
+    display: flex;
+    background-color: #e6e4e4;
+    height: 100px;
+    margin: 0;
+}
+.footer--links {
+    width: 30;
+    display: flex;
+    align-content: space-between;
+    margin-left: 10px;
+    
+}
+.footer--links > div {
+    margin: 20px;
+    
+}
+.footer--submit {
+    float: right;
+    margin-top: 35px;
+    margin-right: 40px;
+    border-radius: 20px;
+    background-color: white;
+    
+}
+.footer--submit > input{
+margin: 20px;
+height: 20px;
+width: 40%;
+border-radius: 5px;
+border-style: solid;
+padding:5px;
+border-color: #b5b5ab;
+}
+.footer--submit > button{
+height: 35px;
+width: 20%;
+margin-left: -10px;
+background-color: orangered;
+border-radius: 5px;
+border-style:hidden;
+padding:5px;
+border-color: #b5b5ab;
+}
+.right {text-align:left; 
+    font-size:20px; 
+    color:grey;  
+    height:15px; 
+    width: 30%; 
+    margin:40px;
+    
+}
+/* media query para deixar o footer responsivo */
+@media (max-width:600px) {
+    footer {
+        height: 350px;
+    }
+    .footer--main{
+        display: none;
+    }
+    .footer--links{
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        margin: 0;
+    }
+    .footer--submit {
+        margin-right: 70px;
+    }
+    .right {
+        margin: 0;
+        width: 90%;
+        text-align: center;
+        margin-top: 10px;
+        
+    }    
+
+}
+
+/* Menu vertical no responsivo apos click, será necessario deixar o search ativo, assim como navtop menu em block, precisaremos de um icone de fechar quando isso acontecer,
+tal icone volta para o estado antes do click;
+
+@media (max-width:600px){
+.navtop--menu {
+display:block;
+text-align: left;
+
+}
+.navtop--li {
+margin-left: 20px;
+    padding: 15px;
+}    
+
+.header--main__burger {
+display: flex;
+}
+.header--main__title {
+display: none;
+}
+
+.header--main__search {
+    display: flex;
+}
+.header--main__burger img {
+    display: flex;
+    height: 50px;
+    color: purple;
+}
+}
+*/
+@media (max-width:600px){
+.navtop--menu--active {
+display:block;
+text-align: left;
+font-weight: 700;
+font-size: 25px;    
+}
+.header--main__title--active {
+display: none;
+}
+.header--main__search--active {
+display: flex;
+   
+}
+.shop--ad--active{
+    
+display: none;        
+    }
+.header--main__burger--active{
+    display: none;
+    }    
+.header--main__close--active{
+    display: flex;
+}
+    .header--main__bag--active{
+        display: none;
+    }
+  
+}
+
+
+
