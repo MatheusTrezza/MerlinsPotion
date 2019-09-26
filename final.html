@@ -1,0 +1,252 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Merlins Potion">
+        <title>Final Project, Merlins potion</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="final.css" >
+        <link rel="stylesheet"  href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+        
+        
+        
+    </head>
+    <body>
+        <script src="jsfinal.js">
+        </script>
+<header class="header--main">
+                
+                <div id="burger"class="header--main__burger" ><a onclick="clickBurger()"><img src='burger.png'</a></div>
+                <div id="close" class="header--main__close"><a onclick="clickBurger()"><img src='close.png'</a></div>
+                <div id ="logo" class="header--main__title"><a href="#"><img src="merlinslogo.jpg"></a></div>
+                <div id='search' class="header--main__search"><input type="search" placeholder="&#xF002 Search our stock" style="font-family:Arial, FontAwesome; color: black;"></div>
+                <div class="header--main__shop">Free shipping <br>on orders over 50$</div>
+                <div id="bag" class="header--main__bag"><img src="caldron.png">BAG:<span style="color:red">1</span></div>
+        
+</header>
+<!------ Menu top -------->                    
+    <p id="shopad" class="shop--ad">Free shipping on orders over 50$</p>
+    <nav class="navtop">
+        <ul id='navtop__menu' class ="navtop--menu">
+            <li class="navtop--li"><a href="#">Potions</a></li>
+            <li class="navtop--li"><a href="#">Ingridients</a></li>
+            <li class="navtop--li"><a href="#">Books</a></li>
+            <li class="navtop--li"><a href="#">Supplies</a></li>
+            <li class="navtop--li"><a href="#">Charms</a></li>
+            <li class="navtop--li"><a href="#">Clearence</a></li>                       
+        </ul>
+    </nav>
+<!--- Galeria principal, usando flexbox ------------------->                    
+        <h1>Potions</h1>
+                <section class='main--potion'>
+                        <div>
+                            <a onclick="toggleLightbox()" href='#'><img src='images/aging-potion.png'></a>
+                            <p>Aging Potion - <span style='color:red'>29.99</span></p>
+                        </div>
+                        <div>
+                            <a onclick="toggleLightbox2()" href='#'><img src='images/bulgeye-potion.png'></a>
+                            <p>Bulgeye Potion - <span style='color:red'>19.99</span></p>
+                        </div>
+                        <div>
+                            <a onclick="toggleLightbox3()" href='#'><img src='images/dragon-tonic.png'></a>
+                            <p>Dragon Tonic - <span style='color:red'>64.99</span></p>
+                        </div>
+                        <div>
+                            <a onclick="toggleLightbox4()" href='#'><img src='images/love-potion.png'></a>
+                            <p>Love Potion - <span style='color:red'>29.99</span></p>
+                        </div>
+                        <div>
+                            <a onclick="toggleLightbox5()" href='#'><img src='images/polyjuice-potion.png'></a>
+                            <p>Polyjuice Potion - <span style='color:red'>99.99</span></p>
+                        </div>
+                        <div>
+                            <a onclick="toggleLightbox6()" href='#'><img src='images/sleeping-draught.png'></a>
+                            <p>Sleeping-draught - <span style='color:red'>14.99</span></p>
+                        </div>
+                
+                </section>
+                    
+<!------------------------------------ LightBoxes, feitas de modo individual ------------------------------>
+        
+                    <div id='lightbox' class="lightbox">
+
+                    <div class="lightbox--content">
+                        <a onclick='toggleLightbox()' class="lightbox--close" href="#">&times;</a>
+                            <a href='#'><img src='images/aging-potion.png'></a>
+                    <div class="lightbox--info">
+                                <h2>Aging Potion</h2>
+                                <h2>Use/Effect</h2>
+                                Causes the drinker to advance in age
+                                <h2>Ingredients</h2>
+                                <p>Red Wine</p>
+                                <p>Prune Juice</p>
+                                <p>Hairy Fungus</p>
+                                <p>Tortoise Shell</p>
+                                <h2>Price:</h2>
+                                <p style="color:red; font-size:20px; font-weight: 700;">29.99</p>
+                                <button type="button">ADD TO CART</button>
+                    </div>
+                    </div>    
+
+</div>
+
+
+
+                    <div id='lightbox2' class="lightbox">
+
+                    <div class="lightbox--content">
+                        <a onclick='toggleLightbox2()' class="lightbox--close" href="#">&times;</a>
+                            <a href='#'><img src='images/bulgeye-potion.png'></a>
+                    <div class="lightbox--info">
+                                <h2>Bulgeye Potion</h2>
+                                <h2>Use/Effect</h2>
+                                It Affects one's eyes, causing them to swell
+                                <h2>Ingredients</h2>
+                                <p>Beetle Eye</p>
+                                <p>Eel Eyes</p>
+                                <p>Cannabis</p>
+                                <p></p>
+                                <h2>Price:</h2>
+                                <p style="color:red; font-size:20px; font-weight: 700;">29.99</p>
+                                <button type="button">ADD TO CART</button>
+                    </div>
+                    </div>    
+
+</div>         
+
+                    <div id='lightbox3' class="lightbox">
+
+                    <div class="lightbox--content">
+                        <a onclick='toggleLightbox3()' class="lightbox--close" href="#">&times;</a>
+                            <a href='#'><img src='images/dragon-tonic.png'></a>
+                    <div class="lightbox--info">
+                                <h2>Dragon Tonic</h2>
+                                <h2>Use/Effect</h2>
+                                A tonic used to cure sick dragons
+                                <h2>Ingredients</h2>
+                                <p>Eagle feathers</p>
+                                <p>Peacock feathers</p>
+                                <p>Toad Warts</p>
+                                <p>Red Wine</p>
+                                <h2>Price:</h2>
+                                <p style="color:red; font-size:20px; font-weight: 700;">64.99</p>
+                                <button type="button">ADD TO CART</button>
+                    </div>
+                    </div>    
+
+</div>
+
+                    <div id='lightbox4' class="lightbox">
+
+                    <div class="lightbox--content">
+                        <a onclick='toggleLightbox4()' class="lightbox--close" href="#">&times;</a>
+                            <a href='#'><img src='images/love-potion.png'></a>
+                    <div class="lightbox--info">
+                                <h2>Love Potion</h2>
+                                <h2>Use/Effect</h2>
+                                The one who wrinks it falls deeply in love with the first one they see
+                                <h2>Ingredients</h2>
+                                <p>Rose petals</p>
+                                <p>Essence of violet</p>
+                                <p>Canary feathers</p>
+                                <p>Newt eyes</p>
+                                <h2>Price:</h2>
+                                <p style="color:red; font-size:20px; font-weight: 700;">29.99</p>
+                                <button type="button">ADD TO CART</button>
+                    </div>
+                    </div>    
+
+</div>           
+
+                    <div id='lightbox5' class="lightbox">          
+                    <div class="lightbox--content">
+                        <a onclick='toggleLightbox5()' class="lightbox--close" href="#">&times;</a>
+                            <a href='#'><img src='images/polyjuice-potion.png'></a>
+                    <div class="lightbox--info">
+                                <h2>Polyjuice Potion</h2>
+                                <h2>Use/Effect</h2>
+                                Allows the drinker to assume the form of someone else
+                            <h2>Ingredients</h2>
+                                <p>Leeches</p>
+                                <p>Bicorn horn</p>
+                                <p>Fluxweed</p>
+                                <h2>Price:</h2>
+                                <p style="color:red; font-size:20px; font-weight: 700;">99.99</p>
+                                <button type="button">ADD TO CART</button>
+                    </div>
+ </div>  
+
+
+                    </div>
+
+
+                    <div id='lightbox6' class="lightbox">
+
+                    <div class="lightbox--content">
+                        <a onclick='toggleLightbox6()' class="lightbox--close" href="#">&times;</a>
+                            <a href='#'><img src='images/sleeping-draught.png'></a>
+                    <div class="lightbox--info">
+                                <h2>Sleeping Draught</h2>
+                                <h2>Use/Effect</h2>
+                                Causes the drinker to fall almost instantaneously into a deep but temporary sleep
+                                <h2>Ingredients</h2>
+                                <p>Springs of Lavender</p>
+                                <p>Measures of Ingredient</p>
+                                <p>Valerian sprigs</p>
+                                <p>Red Wine</p>
+                                <h2>Price:</h2>
+                                <p style="color:red; font-size:20px; font-weight: 700;">29.99</p>
+                                <button type="button">ADD TO CART</button>
+                    </div>
+                    </div>    
+
+ </div>
+    
+                    
+                    
+                    
+                    
+                    
+<!---- Footer --------------------->                    
+    <footer>
+         <div class='footer--submit'>
+        <h4>Sign up for our Newsletter</h4>
+        <h4>Sign up for our Newsletter and get exclusive discounts</h4>
+        <input id='submit--placeholder' type="" placeholder="Enter your Email" style="font-family:Arial, FontAwesome; color: black;"><button type="button">SUBMIT</button>
+        
+        </div>    
+    
+    <div class="footer--main">       
+        <h3>COMPANY<br> RETURNS</h3> 
+        <h3>CONTACT US<br> CAREERS</h3>
+        <h3>SHIPPING</h3>
+    </div>        
+        <div class="footer--links">   
+            <div>
+                <a href='#'><img src="facebook.jpg"></a>
+            </div>
+            <div>
+                <a href='#'><img src="twitter.jpg"></a>
+            </div>
+            <div>
+                <a href='#'><img src='print.jpg'></a>
+            </div>
+            <div>
+                <a href='#'><img src='tumblr.jpg'></a>
+            </div>
+            <div>
+                <a href='#'><img src='google.jpg'></a>
+            </div>
+        </div>
+        
+        
+            <p class='right'> © 2019 Merlins Potions, all rights reserved.</p>
+        
+         
+    
+        
+</footer>    
+ </body>
